@@ -27,7 +27,7 @@ ukf_filter_node:
         transform_timeout: 0.0
 
 # If you're having trouble, try setting this to true, and then echo the /diagnostics_agg topic to see if the node is
-# unhappy with any settings or data.
+# unhappy with any settings or data.yy
         print_diagnostics: true
 
 # Debug settings. Not for the faint of heart. Outputs a ludicrous amount of information to the file specified by
@@ -87,7 +87,7 @@ ukf_filter_node:
 # if unspecified, effectively making this parameter required for each sensor.
         odom0_config: [true,  true,  false,     # x, y, z
                        false, false, true,      # roll, pitch, yaw
-                       true,  true,  false,     # vx, vy, vz
+                       false, false,  false,     # vx, vy, vz
                        false, false, true,      # vroll, vpitch, vyaw
                        false, false,  false]     # ax, ay, az
 
@@ -164,7 +164,7 @@ ukf_filter_node:
         imu0_config: [false, false, false,      # x, y, z
                       false, false, true,       # roll, pitch, yaw
                       false, false, false,      # vx, vy, vz
-                      false, false, true,       # vroll, vpitch, vyaw
+                      false, false, false,       # vroll, vpitch, vyaw
                       false, false, false]      # ax, ay, az
         imu0_nodelay: false
         imu0_differential: false
